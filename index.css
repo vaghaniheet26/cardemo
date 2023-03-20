@@ -432,24 +432,24 @@ margin: 0px 30px;
     font-size: var(--fontsize-big);
 }
 
-.flexible-body-left .flexible-card {
+ .flexible-card {
     margin: 25px 0px;
     background-color: rgba(255, 255, 255, 0.185);
     border-radius: 20px;
     width: 80%;
-}
+}   
 
-.flexible-body-left .flexible-card .flexible-card-body {
+ .flexible-card .flexible-card-body {
     margin: 20px;
 }
 
-.flexible-body-left .flexible-card h2 {
+.flexible-card h2 {
     font-size: var(--fontsize-normal);
 
     padding-top: 20px;
 }
 
-.flexible-body-left .flexible-card p {
+.flexible-card p {
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -471,7 +471,9 @@ margin: 0px 30px;
 
 /* enginerepair start */
 #enginerepair{
+    
 width: 100vw;
+height: 100%;
 box-sizing: border-box;
 background-color: var(--gray-color);
 }
@@ -479,6 +481,7 @@ background-color: var(--gray-color);
     /* background-color: #3E6D9C; */
     padding: 200px 0px;
     width: 100%;
+    height: 100%;
     display: flex;
 flex-direction: row;
 justify-content: center;
@@ -488,11 +491,16 @@ justify-content: center;
 .enginerepair-body-left {
     background-color: var(--gray-color);
   width: 50%;
-  
+  display: flex;
+align-items: end;  
 }
 .enginerepair-body-left img{
-    padding-top: 50px;
+    margin-top: 50px;
+    height: 900px;
     width: 100%;
+    border-radius: 20px;
+    
+
 }
 
 .enginerepair-body-right{
@@ -515,6 +523,7 @@ flex-wrap: wrap;
 width: 70%;
 margin: auto;
 border: 1px solid rgba(0, 0, 0, 0.199);
+border-radius: 20px;
 background-color: white;
 padding: 40px;
 }
@@ -537,12 +546,19 @@ margin-bottom: 5px;
 display: inline-block;
 font-size: var(--fontsize-normal);
 }
-.enginerepair-body-right .form .input-item input{
+.enginerepair-body-right .form .input-item input , .form .input-item textarea{
  width: 100%;
  border-radius: 3px;
 display: inline-block;
 height: 20px;
+font-size: 18px;
+padding: 5px 3px;
+border: 2px solid rgba(97, 97, 97, 0.486);
 
+}
+.form .input-item textarea{
+    height: 100%;
+    resize:vertical;
 }
 .enginerepair-body-right .div{
 
@@ -552,24 +568,88 @@ height: 20px;
 margin: auto;
  
 }
-.enginerepair-body-right .form .inline-input {
-
- 
+.input-item .btn {
+    background-color: var(--quaternary-color);
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    
+    border-radius: 3px;
+    /* margin: auto; */
+    
+    margin: 0px;
+}
+.input-item .btn:hover {
+   cursor: pointer;
 }
 
-.enginerepair-body-right .form .inline-input .gdate{
-
- 
-}
- .gtime div{
-
-
-}
 /* enginerepair end */
 
+/* autopaint-section start */
+.autopaint-section{
+    box-sizing: border-box;
+    background-color: var(--primery-color);
+    color: white;
+    padding: 40px 0px;
+    width: 100vw;
+    display: flex;
+}
+.autopaint-body{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+.autopaint-body-l >  h2{
+    font-size: 33px;
+   
+}
+.autopaint-body-l{
+    
+    
+}
+.autopaint-body .flexible-card{ 
+    width: 300px;
+    padding-right: 20px;
+}
+
+.autopaint-body-r{
+    /* background-color: #E14D2A; */
+    display: flex;
+    padding: 10px 30px;
+}
+
+.autopaint-body-r-1{
+   position: relative;
+   /* display: flex;
+   flex-direction: row; */
+   margin: 0px 10px;
+  
+}
+.autopaint-body-r img{
+    display: block;
+
+}
+.autopaint-body-r-1-body{
+    width: 50%;
+    /* background-color: #3E6D9C; */
+
+}
+.autopaint-body-r-1-body img{
+    width: 300px;
+    border-radius: 20px;
+    
+    
+}
+.bottom-left{
+    position: absolute;
+   height: 70%;
+   
+}
+/* autopaint-section end */
 
 
-/* offer section End here */
 
 
 /* media queary */
