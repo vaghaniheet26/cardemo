@@ -647,24 +647,125 @@ margin: auto;
    height: 70%;
    
 }
+
+/* brand section start */
+.brand-section{
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.brand-section h1{
+    text-align: center;
+}
+.brand-body{
+   
+    
+}
+.brands{
+    margin-top: 30px ;
+    display: grid;
+grid-template-columns: repeat(6,1fr);
+}
+.brands img{
+width: 80px;
+
+}
+.brand-box{
+    height: 150px;
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+
+
+/* review-section start */
+.review-section{
+    background-color: white;
+    padding: 50px 0px;
+}
+.review-box-main {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+}
+.review-box-main .scroll-btn{
+    height: 40px;
+    transition: transform 0.1s;
+}
+.review-box-main .scroll-btn:hover{
+    cursor: pointer;
+    /* background-color: gray; */
+    border-radius:100% ;
+    transform: scale(1.1);
+}
+.review-section h1, .review-section h3{
+    text-align: center;
+}   
+.review-section h3{
+    color: rgba(0, 0, 0, 0.562);
+}
+.review{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    overflow-x: scroll;
+    margin: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.review-boxes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    flex: none;
+    
+}
+.review-box{
+    position: relative;
+    background-color: #7272726c;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    /* flex: none; */
+    margin: auto;
+    
+}
+
+.review-box .star{
+    width: 100%;
+    /* background-color: #8599ce; */
+    display: flex;
+    /* flex-direction: column;   */
+    justify-content: end;
+}
+.review-box .star img{
+ width: 20px;
+ height: 20px;
+ display: inline-block;
+ margin: 3px;
+}
+.dp{
+    position: absolute;
+    width: 100px;
+    /* background-color: #3E6D9C; */
+    top: -40px;
+    left: -30px;
+}
+.dp img{
+    width: 100%;
+    border-radius: 100%;
+    
+}
+/* review-section End */
+/* brand section End */
+
 /* autopaint-section end */
 
 
 
-
-/* media queary */
-/* for large  laptop to laptop screen */
-@media (max-width: 1100px) and (min-width: 1024px) {
-    #navbar-box {
-        padding: 10px 20px;
-    }
-}
-
-
-@media (max-width: 1024px) and (min-width: 00px) {
-    #navbar-box {
-        padding: 10px 20px;
-    }
-}
-
-/* media queary */
