@@ -42,3 +42,22 @@ function setBtnOff() {
     btnIsOn = true
     // console.log(btnIsOn);
 }
+
+let selectvalue = document.querySelector(".input-item select");
+console.log(selectvalue.value);
+if(selectvalue.value === "select-none"){
+    selectvalue.style.color = "rgba(0, 0, 0, 0.555)";
+
+}
+else{
+    selectvalue.style.color = "black";
+}
+selectvalue.addEventListener('change', () => {
+    if(selectvalue.value === "select-none"){
+        selectvalue.style.color = "rgba(0, 0, 0, 0.555)";
+    
+    }
+    else{
+        selectvalue.style.color = "black";
+    }
+});
